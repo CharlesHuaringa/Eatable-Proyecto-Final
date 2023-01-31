@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+}
+
+
+
+html,
+body {
+  background: #ffffff;
+}
+h1 {
+  margin: 1px;
+  padding: 10px;
+}
+
+
+
+.custom-form {
+  min-width: 60px;
+  max-width: 60%;
+  margin: 0px auto;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 2rem 3rem;
+  margin: auto;
+  border-radius: 2.5rem;
+  background-color: #ffffff;
+  box-shadow: 13px 13px 20px #ffffff, -13px -13px 20px #ffffff;
+  color: black;
+  margin-top: 5rem;   
+  background: white;
+
+}
+
+.custom-form input {
+  display: block;
+  margin: 2rem 0;
+  width: 100%;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  border: none;
+  box-shadow: inset -5px -5px 15px rgba(254, 254, 254, 0.8), inset 5px 5px 10px
+      rgba(159, 19, 19, 0.1);
+  border: 0 none;
+  background-color: #ecf0f3;
+}
+
+.custom-form button {
+  text-transform: uppercase;
+  border: none;
+  font-size: 0.875rem;
+  color: #000000;
+  font-weight: bold;
+  background-color: #ffffff;
+  width: 50%;
+  padding: 03rem 1rem;
+  text-align:justify;
+
+  
+}
+
+
+form {
+  /* Centrar el formulario en la página */
+  margin: 0 auto;
+  width: 400px;
+  /* Esquema del formulario */
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+}
+ 
+
+
+input {
+
+  /* Tamaño uniforme del campo de texto */
+  width: 300px;
+  box-sizing: border-box;
+}
+
+.button {
+  /* Alinear los botones con los campos de texto */
+  padding-left: 90px; /* mismo tamaño que los elementos de la etiqueta */
+
+}
+
+.button2 {
+  /* Este margen adicional representa aproximadamente el mismo espacio que el espacio
+     entre las etiquetas y sus campos de texto */
+  margin-left: .5em;
+  margin-top: 4em;
+background-color: #FA4A0C;
+border-style: none;
+border-radius: 1.2em;
+padding: 1em;
+width: 15em;
+color: white;
+
+}
+
+.comida{
+   text-align:center;
+    padding-top: 20px;
+    margin-top: 10%;   
+    color:#ffffff;
+    margin: auto;
+}
+
+
+.comida2{
+  height: 10%;
+  width: 10%;
+  margin-top: -10px;
+}
+
+
+.boton3{
+  text-align: center;
+  text-decoration:none;
+  padding-top:9%;
+  padding-bottom:15px;
+  padding-left:45px;
+  padding: 5px;
+  background-color:#ff7b00;
+  border-color: #ff7b00;
+  border-width: 1px;
+  border-style: solid;
+  border-radius:35px;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  height: 0;
+  width: 1%;
+
+}

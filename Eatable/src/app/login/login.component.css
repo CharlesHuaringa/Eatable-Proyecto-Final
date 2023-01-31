@@ -1,0 +1,77 @@
+.custom-form {
+  min-width: 60px;
+  max-width: 60%;
+  margin: auto;
+  color: black;
+  margin-top: 5rem;   
+
+}
+
+.custom-form input {
+  margin: 1rem 0;
+  width: 100%;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  border: none;
+  box-shadow: inset -5px -5px 15px rgba(254, 254, 254, 0.8), inset 5px 5px 10px
+      rgba(159, 19, 19, 0.1);
+  border: 0 none;
+  background-color: #ecf0f3;
+}
+
+.custom-form button {
+  text-transform: uppercase;
+  border: none;
+  font-size: 0.875rem;
+  color: #000000;
+  font-weight: bold;
+  background-color: #ffffff;
+  width: 50%;
+  padding: 03rem 1rem;
+  text-align:justify;
+
+}
+
+form {
+  /* Centrar el formulario en la página */
+  margin: 0 auto;
+  width: 400px;
+  /* Esquema del formulario */
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+}  
+
+.boton3{
+  text-align: center;
+  text-decoration:none;
+  padding-top:9%;
+  padding-bottom:15px;
+  padding-left:45px;
+  padding: 5px;
+  background-color:#ff7b00;
+  border-color: #ff7b00;
+  border-width: 1px;
+  border-style: solid;
+  border-radius:35px;
+  text-decoration: none;
+  border-radius: 0.5rem;
+
+
+}
+
+.btn-ingreso{
+  text-align: center;
+  
+  }
+  
+  .btn-register{
+  margin-top: 4em;
+  background-color: #FA4A0C;
+  border-style: none;
+  border-radius: 1.2em;
+  padding: 1em;
+  width: 15em;
+  color: white;
+  
+  }

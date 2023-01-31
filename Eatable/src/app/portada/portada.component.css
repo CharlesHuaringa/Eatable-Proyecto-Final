@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    border-radius: 18px;
+    border-radius: 18px;
+     
+    
+}
+
+
+.contenedor{
+width: 75vw;
+max-width: 35%;
+min-width: 200px;
+margin: auto;
+
+}
+
+
+.contenedor2{
+margin: auto;
+margin-top: -390px;
+margin-left: 100px;
+
+
+}
+
+.contenedor3{
+ width: 75vw;
+max-width: 50%;
+min-width: 200px;
+margin: auto;
+margin-top: -8px;
+margin-left: 45px;
+text-align: center;
+width: 500px;
+
+}
+
+.bonton{
+    margin:40%;
+    margin-top: -1px;
+}
+
