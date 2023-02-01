@@ -1,0 +1,72 @@
+:host {
+  --color-orange: #fa4a0c;
+}
+
+.container {
+  margin: auto;
+  max-width: 260px;
+  padding: 0 16px;
+}
+
+.logo {
+  margin: auto;
+  padding: 115px 0 84px 0;
+  width: 150px;
+}
+
+.logo img {
+  display: block;
+  width: 100%;
+}
+
+.navigation {
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+}
+
+.navigation a {
+  color: black;
+  display: block;
+  font-weight: bold;
+  padding: 12px 34px;
+  text-decoration: none;
+}
+
+.active {
+  border-bottom: 3px solid var(--color-orange);
+}
+
+input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #b3b3b5;
+  color: #444;
+  display: block;
+  font-size: 15px;
+  padding: 3px 0;
+  width: 100%;
+}
+
+label {
+  color: #c2c2c5;
+  display: block;
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+form {
+  margin-top: 1.2rem;
+}
+
+.field {
+  padding: 22px 0;
+}
+
+
+
+@media (min-width: 768px) {
+  .footer {
+    position: static;
+  }
+}

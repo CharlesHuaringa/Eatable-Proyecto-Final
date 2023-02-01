@@ -1,0 +1,88 @@
+<div class="layout-page">
+  <div class="layout-header">
+    <div class="layout-container">
+      <div class="topbar">
+        <!-- <button class="back-button" routerLink="/profile">
+          <i class="material-icons">keyboard_arrow_left</i>
+        </button> -->
+        <h2 class="title">My Profile</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="layout-content">
+    <div class="layout-container">
+      <div class="seccion seccion-subtitle-btn">
+        <p class="subtitle">Personal details</p>
+        <button
+          [ngStyle]="{
+            color: '#fa4a0c',
+            'background-color': '#f6f6f9',
+            'padding-right': '2px'
+          }"
+          routerLink="/profile/edit"
+        >
+          change
+        </button>
+      </div>
+
+      <div class="datos-profile" *ngIf="profile">
+        <div class="contenido-form">
+          <div class="contenido-datos">
+            <p class="name" *ngIf="profile.name">{{ profile.name }}</p>
+
+            <div class="inputs" *ngIf="profile.email">
+              <label for="email">Email</label>
+              <input
+                type="text"
+                class="input-text"
+                id="email"
+                value="{{ profile.email }}"
+                *ngIf="profile.email"
+              />
+            </div>
+            <div class="inputs" *ngIf="profile.phone">
+              <label for="phone">Phone</label>
+              <input
+                type="text"
+                class="input-text"
+                id="phone"
+                value="{{ profile.phone }}"
+              />
+            </div>
+            <div class="inputs" *ngIf="profile.address">
+              <label for="address">Address</label>
+              <input
+                type="text"
+                class="input-text lugar"
+                id="address"
+                value="{{ profile.address }}"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="seccion-history" routerLink="/history">
+        <div class="seccion history">
+          <div class="text">History</div>
+          <button class="btn-chevron_right">
+            <i class="material-icons">chevron_right</i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="layout-footer">
+    <div class="layout-container">
+      <button
+        class="big-button"
+        type="submit"
+        (click)="this.authService.signout()"
+      >
+        Logout
+      </button>
+    </div>
+  </div>
+</div>

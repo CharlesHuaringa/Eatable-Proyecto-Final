@@ -1,0 +1,54 @@
+:host {
+  --color-orange: #fa4a0c;
+  --color-text: #3e3e3f;
+}
+
+.container {
+  margin: auto;
+  max-width: 320px;
+  padding: 0 16px;
+}
+
+/* h2 {
+  font-size: 17px;
+} */
+
+h2,
+h4 {
+  color: var(--color-text);
+}
+
+h4 {
+  padding: 12px 0;
+  font-weight: 500;
+  font-size: 15.1px;
+}
+
+.card-edit {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 22px;
+}
+
+.field {
+  padding-bottom: 10px;
+}
+
+.field label {
+  color: #c2c2c5;
+  font-size: 12px;
+  font-family: "Source Sans Pro";
+}
+
+.field input,
+textarea {
+  border: none;
+  border-bottom: 1px solid var(--color-gray);
+  color: var(--color-text);
+  display: block;
+  font-size: 15px;
+  padding: 4px 0;
+  outline: none;
+  width: 100%;
+  font-family: "Source Sans Pro";
+}

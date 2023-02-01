@@ -1,0 +1,65 @@
+<div class="layout-page">
+  <div class="layout-header">
+    <div class="layout-container">
+      <div class="topbar">
+        <button class="back-button" routerLink="/">
+          <i class="material-icons">keyboard_arrow_left</i>
+        </button>
+        <h2>Cart</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="layout-content">
+    <!-- no results -->
+    <app-no-results
+      *ngIf="cartService.getItems()?.length == 0"
+      icon="shopping_cart"
+      text="No items in the cart"
+    ></app-no-results>
+
+    <div class="layout-container">
+      <div class="item" *ngFor="let item of cartService.getItems()">
+        <div>
+          <div
+            class="food-picture"
+            [style]="{
+              'background-image': 'url(\'' + item.food.picture_url + '\')'
+            }"
+          ></div>
+        </div>
+        <div class="item-details">
+          <div class="food-name">{{ item.food.name }}</div>
+          <div class="food-price">${{ item.food.price }}</div>
+        </div>
+        <div>
+          <div class="btn-cantidad">
+            <div (click)="cartService.removeFood(item.food._id, 1)">
+              <i class="material-icons">
+                {{ item.quantity === 1 ? "delete_forever" : "remove" }}
+              </i>
+            </div>
+            <div class="quantity">{{ item.quantity }}</div>
+            <div (click)="cartService.addFood(item.food._id, 1)">
+              <i class="material-icons">add</i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="layout-footer footer" *ngIf="cartService.getItems()?.length != 0">
+    <div class="layout-container">
+      <div class="total">
+        <span>Total</span>
+        <span class="number">{{
+          cartService.calculateTotalPrice() | currency
+        }}</span>
+      </div>
+      <button class="big-button" type="submit" routerLink="/cart/checkout">
+        Checkout
+      </button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,82 @@
+:host {
+  --color-orange: #fa4a0c;
+  --color-text: #363636;
+}
+
+/*.layout-content */
+.layout-container {
+  max-width: 352px;
+}
+
+.item {
+  align-items: center;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.04);
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 18px;
+  padding: 16px;
+}
+
+.item-details {
+  padding-left: 12px;
+  width: 100%;
+}
+
+.food-picture {
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  box-shadow: 0 20px 16px 0 rgba(0, 0, 0, 0.2);
+  height: 50px;
+  width: 50px;
+}
+
+.food-name {
+  font-size: 0.8rem;
+  /* font-weight: bold; */
+}
+
+.food-price {
+  color: var(--color-orange);
+}
+
+.btn-cantidad {
+  align-items: center;
+  background-color: var(--color-orange);
+  border-radius: 16px;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  margin-top: 28px;
+  padding: 0 4px;
+}
+.btn-cantidad i {
+  display: block;
+  font-size: 18px;
+}
+.btn-cantidad .quantity {
+  font-family: arial;
+  font-weight: bold;
+  text-align: center;
+  width: 18px;
+}
+
+.footer {
+  height: 120px;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 28px;
+  padding: 6px 0;
+}
+
+.total .number {
+  font-weight: bold;
+  font-size: 1.1rem;
+}

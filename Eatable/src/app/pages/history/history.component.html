@@ -1,0 +1,52 @@
+<div class="layout-page">
+  <div class="layout-header">
+    <div class="layout-container">
+      <div class="topbar">
+        <!-- <button class="back-button" routerLink="/profile">
+          <i class="material-icons">keyboard_arrow_left</i>
+        </button> -->
+        <h2>History</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="layout-content">
+    <!-- no results -->
+    <app-no-results
+      *ngIf="orders?.length == 0"
+      icon="event_note"
+      text="No history yet"
+    ></app-no-results>
+
+    <div class="layout-container" *ngIf="orders">
+      <div class="datos" *ngFor="let order of orders">
+        <p class="date">{{ order.date | date }}</p>
+        <div class="info-total">
+          <p>
+            {{ order.totalItems }} item{{ order.totalItems > 1 ? "s" : "" }}
+          </p>
+          <p class="price" [ngStyle]="{ color: '#fa4a0c' }">
+            {{ order.totalPrice | currency }}
+          </p>
+        </div>
+        <div class="section-order" *ngIf="filtrar">
+          <p class="subtitle">Order</p>
+          <div class="order-info" *ngFor="let item of order.items">
+            <p class="text">{{ item.quantity }}. {{ item.food.name }}</p>
+            <p class="price">{{ item.totalPrice | currency }}</p>
+          </div>
+          <div class="line"></div>
+          <p class="subtitle">Delivery</p>
+          <p class="text">{{ order.delivery_address }}</p>
+        </div>
+        <div
+          class="iconFilter"
+          [ngClass]="filtrar ? 'rotacion' : ''"
+          (click)="expandir()"
+        >
+          <i class="material-icons">expand_more</i>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
